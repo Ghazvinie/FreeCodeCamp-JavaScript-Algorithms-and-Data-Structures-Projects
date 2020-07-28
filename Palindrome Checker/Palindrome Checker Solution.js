@@ -1,13 +1,8 @@
-const palindrome = str =>
+const palindrome = str => {
 
-
-str
-.match(/[a-z]|[0-9]/gi)
-.join('')
-.toLowerCase() === str
-                    .split('')
-                    .reverse()
-                    .join('')
-                    .match(/[a-z]|[0-9]/gi)
-                    .join('')
-                    .toLowerCase();
+    str = str.match(/[a-z]|[0-9]/gi).join('').toLowerCase();
+    
+    return str  === str .split('')
+                        .reverse()
+                        .join('');
+    };
